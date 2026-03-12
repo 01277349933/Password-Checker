@@ -7,7 +7,7 @@ public static void main(String[] args)
   
        Scanner in=new Scanner(System.in);
        boolean exit=true;
-  //     عرض القاىمة الرىيسية 
+  
  do
  {
       System.out.print("\n\n\n\n");
@@ -55,7 +55,7 @@ public static void main(String[] args)
       
 }
 
-// دالة انشاء باسورد
+
 
 public static void Generator(int SizeOfPassword)
 {
@@ -84,7 +84,7 @@ break;
 
 
 }
-// دالة فحص قوة الباسورد
+
 public static void cheker(String password) 
 { 
     String[] passab={"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s"}; 
@@ -103,22 +103,22 @@ public static void cheker(String password)
 
         char c = password.charAt(i);
 
-        // حروف صغيرة
+        
         for(int j = 0; j < passab.length; j++) {
             if(c == passab[j].charAt(0)) counter+=0.5;
         }
 
-        // حروف كبيرة
+        
         for(int j = 0; j < passAB.length; j++) {
             if(c == passAB[j].charAt(0)) counter+=0.5;
         }
 
-        // أرقام
+        
         for(int j = 0; j < pass12.length; j++) {
             if(c == pass12[j].charAt(0)) counter+=0.5;
         }
 
-        // رموز
+        
         for(int j = 0; j < passSimbol.length; j++) {
             if(c == passSimbol[j].charAt(0)) counter+=0.5;
         }
