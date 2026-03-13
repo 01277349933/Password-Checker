@@ -1,10 +1,10 @@
-# 🔐 Password Checker & Generator
+
 
 A simple Java project to **check password strength** and **generate strong passwords**.
 
 ---
 
-## ⚡ Features
+
 
 - **Check Password Strength**: Rate passwords (1–10) based on:
   - Length ≥ 8  
@@ -17,7 +17,7 @@ A simple Java project to **check password strength** and **generate strong passw
 
 ---
 
-## 🖥️ How to Run
+
 
 1. Clone the repo:
 ```bash
