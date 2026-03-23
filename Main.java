@@ -2,16 +2,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    // ----------------------------------------------
-    // عمرو فتحي الليثي       
-    // ----------------------------
-// لالوان الشاشة
+
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
     public static final String GREEN = "\u001B[32m";
     public static final String YELLOW = "\u001B[33m";
     public static final String CYAN = "\u001B[36m";
-// مسح الشاشة 
+
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
@@ -23,8 +20,7 @@ public class Main {
 
         do {
             clearScreen();
-// -----------------------------------------------------------------------------
-// القاىمة الرىيسية 
+
             System.out.println(CYAN + "\t\t\t\tHello! Dear in program, Check strong password or not!" + RESET);
             System.out.println(YELLOW + "\t\t\t\t1- Password Checker" + RESET);
             System.out.println(YELLOW + "\t\t\t\t2- Generate Strong Password" + RESET);
@@ -72,11 +68,8 @@ public class Main {
 
         } while (exit);
     }
-// ----------------------------------------------------------
-// محمد اسامة        
-// ----------------------------------------
 
-    // قراءة ادخال المسخدم 
+   
     public static int readInt(Scanner in) {
         while (true) {
             try {
@@ -87,7 +80,6 @@ public class Main {
             }
         }
     }
-// دالة لو المسخدم عايز يعمل حاجة تاني
 
     public static boolean askAgain(Scanner in) {
         System.out.print(YELLOW + "\t\t\t\tDo another process? 1-Yes  2-No: " + RESET);
@@ -104,10 +96,6 @@ public class Main {
     }
 
 
-    // -------------------------------------------------------------------------------------------
-    // عمرو فتحي الليثي            
-    // -----------------------------------
-    // ددالة انشاء باسورد 
     public static void Generator(int SizeOfPassword) {
         clearScreen();
         System.out.println(GREEN + "\t\t\t\tGenerating strong password..." + RESET);
@@ -134,11 +122,7 @@ public class Main {
 
         System.out.println(CYAN + "\t\t\t\t Your strong password-:> " + GREEN + password + RESET);
     }
-// ---------------------------------------------
-// بافلي سمعان     
-// --------------------------------
 
-// دالة الفحص 
     public static void cheker(String password) {
 
         clearScreen();
